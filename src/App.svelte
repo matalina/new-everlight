@@ -6,26 +6,19 @@
 
 <script>
   import { Route, Router } from 'svelte-routing';
-  import ChangeLog from './components/pages/ChangeLog.svelte';
   import Story from './components/pages/Story.svelte';
-  import About from './components/pages/About.svelte';
   import More from './components/pages/More.svelte';
   import Settings from './components/pages/Settings.svelte';
-  import Home, { isDarkMode } from './components/pages/Home.svelte';
 
 
   let url = $state('');
-  let dark = $derived(isDarkMode.value);
 </script>
 
-<div id="app" class="mx-auto lg:w-1/2" class:dark={dark}>
+<div id="app" class="mx-auto lg:w-1/2">
   <Router {url}>
     <div class="layout p-3 border h-full">
       <section class="">
-        <Route path="/"><Home /></Route>
-        <Route path="/story"><Story /></Route>
-        <Route path="/change-log"><ChangeLog /></Route>
-        <Route path="/about"><About /></Route>
+        <Route path="/"><Story /></Route>
         <Route path="/more"><More /></Route>
         <Route path="/settings"><Settings/></Route> 
       </section>
