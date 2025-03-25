@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+
+html, body, #app {
+  @apply h-full text-stone-700 bg-stone-300 relative;
+}
+#app {
+  @apply bg-stone-100;
+}
+#app.dark {
+  @apply text-stone-100 bg-stone-900;
+}
+
+.dark img {
+  filter: invert(1);
+} 
+
+#home a {
+  @apply py-2 px-3;
+}
+
+button {
+  @apply py-2 px-3 ;
+  @apply border bg-stone-300 border-stone-900 text-stone-900 ;
+  @apply hover:bg-stone-400 focus:bg-stone-400;
+  @apply disabled:bg-stone-100 disabled:cursor-not-allowed cursor-pointer;
+}
+.dark button {
+  @apply bg-stone-600 text-stone-600 border-stone-600;
+  @apply hover:bg-stone-800 focus:bg-stone-800;
+  @apply disabled:bg-stone-400;
+}
+button.transparent {
+  @apply bg-transparent border-0;
+}
+
+input, select, textarea {
+  @apply py-2 px-3 border border-stone-900 text-stone-900 bg-stone-100;
+}
+input.dark, select.dark, textarea.dark {
+  @apply border-stone-100;
+}
+
+h4 {
+  @apply text-2xl font-bold;
+}
+
+p, table {
+  @apply mb-3;
+}
+
+table {
+  @apply border;
+}
+th, td {
+  @apply p-2 border;
+}
+
+ul {
+  @apply list-disc list-inside mb-3;
+}
+
+.content {
+  height: calc(100vh - 260px);
+}
+
+.disable {
+  @apply disabled:bg-stone-100 disabled:border-stone-700 disabled:text-stone-700 disabled:cursor-not-allowed;
+}
+.entry {
+  @apply pb-3 mb-2 border-b;
+}
+
+small {
+  @apply text-xs italic;
+}
+
+/* Modal Styles */
+dialog {
+  @apply mx-auto lg:w-1/2 p-3 rounded;
+}
+
+::backdrop {
+  @apply bg-stone-900/75;
+}
+
+dialog h2 {
+  @apply text-xl font-bold;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  @apply relative;
+}
+
+#tooltip {
+  @apply bg-stone-900 text-stone-100 p-1 rounded text-sm w-max;
+  @apply drop-shadow-md;
+  @apply absolute z-10;
+}
+#tooltip.top {  
+  bottom: 100%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+#tooltip.bottom {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#tooltip.left {
+  top: 50%;
+  right: 100%;
+  transform: translate(0, -50%);
+}
+#tooltip.right {
+  top: 50%;
+  left: 100%;
+  transform: translate(0, -50%);
+}
+.tooltip:not(:focus) #tooltip::before {
+  content: '';
+  position: absolute;
+  background: inherit;
+}
+.tooltip:not(:focus) #tooltip.top::before {
+  top: 100%;
+  left: 50%;
+  width: 0.6em;
+  height: 0.25em;
+  transform: translateX(-50%);
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+.tooltip:not(:focus) #tooltip.bottom::before {
+  bottom: 100%;
+  left: 50%;
+  width: 0.6em;
+  height: 0.25em;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+
+}
+.tooltip:not(:focus) #tooltip.left::before {
+  top: 50%;
+  left: 100%;
+  height: 0.6em;
+  width: 0.25em;
+  transform: translateY(-50%);
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+.tooltip:not(:focus) #tooltip.right::before {
+  top: 50%;
+  right: 100%;
+  height: 0.6em;
+  width: 0.25em;
+  transform: translateY(-50%);
+  clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+}
+.dark #tooltip {
+  @apply bg-stone-100 text-stone-900;
+}
+
+/* Map Styles */
+.map {
+
+}
+.map td{
+  @apply md:w-20 md:h-20 w-15 h-15;
+}
