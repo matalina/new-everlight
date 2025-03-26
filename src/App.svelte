@@ -8,7 +8,6 @@
   import { Route, Router } from 'svelte-routing';
   import Story from './components/pages/Story.svelte';
   import More from './components/pages/More.svelte';
-  import Settings from './components/pages/Settings.svelte';
 
 
   let url = $state('');
@@ -20,7 +19,6 @@
       <section class="">
         <Route path="/"><Story /></Route>
         <Route path="/more"><More /></Route>
-        <Route path="/settings"><Settings/></Route> 
       </section>
     </div>
   </Router>

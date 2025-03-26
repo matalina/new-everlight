@@ -1,17 +1,16 @@
 import type { RandomTable } from './types';
-import { creatureMotivations, creatureTypes, daysWeek, genre, moonPhases, season, timeDay, weather } from './tables';
+import { daysWeek, moonPhases, season, timeDay, weather } from './tables';
+import { clueTable } from './everlight';
 
 /* Table Options */
 
 export const moreTables: {[key: string]: RandomTable} = {
-  [genre.name]: genre,
   [weather.name]: weather,
   [season.name]: season,
   [timeDay.name]: timeDay,
   [moonPhases.name]: moonPhases,
   [daysWeek.name]: daysWeek,
-  [creatureTypes.name]: creatureTypes,
-  [creatureMotivations.name]: creatureMotivations,
+  [clueTable.name]: clueTable,
 };
 
 
