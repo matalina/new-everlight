@@ -18,7 +18,6 @@
   function cancel() {
     open = false;
   }
-  $inspect(open);
 </script>
 
 <button

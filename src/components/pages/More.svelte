@@ -9,7 +9,10 @@
 <Page back="/">
   <h3 class="text-3xl font-bold mb-3">More Options</h3>
 
-  <RandomTables />
-  <RandomNPC />
-  <RandomCreature />
+  <div class="flex flex-col gap-2">
+    <RandomNPC />
+    <RandomCreature />
+    <RandomTables />
+  </div>
+
 </Page>
