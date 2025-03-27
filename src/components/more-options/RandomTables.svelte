@@ -30,28 +30,32 @@
   <h4 class="text-2xl font-bold mb-3">Random Tables</h4>
 
   <div class="flex">
-    <div class="flex pr-3">
-      <select class="border" bind:value={value}>
-        {#each tables as table}
-          <option value={table}>{table}</option>
-        {/each}
-      </select>
-      <button
-        class="w-[48px] flex items-center justify-center"
-        onclick={getResult}
-      >
-        <img src={RollIcon} alt="Roll" class="h-[24px]"/>
-      </button>
+    <div>
+      <div class="flex pr-3">
+        <select class="border" bind:value={value}>
+          {#each tables as table}
+            <option value={table}>{table}</option>
+          {/each}
+        </select>
+        <button
+          class="w-[48px] flex items-center justify-center"
+          onclick={getResult}
+        >
+          <img src={RollIcon} alt="Roll" class="h-[24px]"/>
+        </button>
+      </div>
     </div>
     <div class="flex grow gap-3 justify-between items-center">
       {#if result}
         <div class="">{@html result}</div>
-        <button
-          class="w-[48px]"
-          onclick={saveToStory}
-        >
-          <img src={PlusIcon} alt="Roll" class="h-[24px]"/>
-        </button>
+        <div>
+          <button
+            class="w-[48px]"
+            onclick={saveToStory}
+          >
+            <img src={PlusIcon} alt="Roll" class="h-[24px]"/>
+          </button>
+      </div>
       {/if}
     </div>
   </div>
