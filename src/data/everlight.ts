@@ -779,3 +779,467 @@ export const huntersFocusTable: RandomTable = {
     { min: 20, max: 20, description: "Uses Disguises and False Identities" }
   ]
 };
+
+export const damageTypesTable: RandomTable = {
+  name: "Damage Types",
+  description: "A table of various damage types",
+  diceFormula: "1d8",
+  table: [
+    { min: 1, max: 1, description: "Physical (piercing, slashing, crushing weapons)" },
+    { min: 2, max: 2, description: "Psychic (mental, psychic)" },
+    { min: 3, max: 3, description: "Elemental (fire, air, earth, water)" },
+    { min: 4, max: 4, description: "Necrotic (death, undead, spirits, blood magic)" },
+    { min: 5, max: 5, description: "Radiant (divine, angelic, light)" },
+    { min: 6, max: 6, description: "Shadow (shadows, Nether magic)" },
+    { min: 7, max: 7, description: "Chaos (Faerie Magic)" },
+    { min: 8, max: 8, description: "Toxic (poisons, venom, disease, radiation)" }
+  ]
+};
+
+export const strainPhysicalTable: RandomTable = {
+  name: "Physical Strain",
+  description: "Minor physical strains or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Bruised ribs" },
+    { min: 2, max: 2, description: "Sprained wrist" },
+    { min: 3, max: 3, description: "Winded" },
+    { min: 4, max: 4, description: "Mild cut" },
+    { min: 5, max: 5, description: "Sore muscles" },
+    { min: 6, max: 6, description: "Battered" }
+  ]
+};
+
+export const lingeringTraumaPhysicalTable: RandomTable = {
+  name: "Physical Lingering Trauma",
+  description: "Lingering physical traumas or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Deep cut" },
+    { min: 2, max: 2, description: "Concussion" },
+    { min: 3, max: 3, description: "Nasty burn" },
+    { min: 4, max: 4, description: "Dislocated joint" },
+    { min: 5, max: 5, description: "Broken nose" },
+    { min: 6, max: 6, description: "Swollen eye" }
+  ]
+};
+
+export const debilitatingInjuryPhysicalTable: RandomTable = {
+  name: "Physical Debilitating Injury",
+  description: "Severe physical injuries that can hinder performance",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Fractured bone" },
+    { min: 2, max: 2, description: "Torn muscle" },
+    { min: 3, max: 3, description: "Internal bleeding" },
+    { min: 4, max: 4, description: "Nerve damage" },
+    { min: 5, max: 5, description: "Cracked ribs" },
+    { min: 6, max: 6, description: "Deep puncture wound" }
+  ]
+};
+
+export const lastingScarPhysicalTable: RandomTable = {
+  name: "Physical Lasting Scar",
+  description: "Severe and permanent physical scars or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Crippled limb" },
+    { min: 2, max: 2, description: "Loss of fingers/toes" },
+    { min: 3, max: 3, description: "Severe limp" },
+    { min: 4, max: 4, description: "Organ damage" },
+    { min: 5, max: 5, description: "Partial blindness/deafness" },
+    { min: 6, max: 6, description: "Missing limb" }
+  ]
+};
+
+export const strainPsychicTable: RandomTable = {
+  name: "Psychic Strain",
+  description: "Minor psychic strains or disturbances",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Distracted thoughts" },
+    { min: 2, max: 2, description: "Irritability" },
+    { min: 3, max: 3, description: "Difficulty focusing" },
+    { min: 4, max: 4, description: "Mood swings" },
+    { min: 5, max: 5, description: "Nervousness" },
+    { min: 6, max: 6, description: "Restlessness" }
+  ]
+};
+
+export const lingeringTraumaPsychicTable: RandomTable = {
+  name: "Psychic Lingering Trauma",
+  description: "Lingering psychic traumas or disturbances",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Recurring nightmares" },
+    { min: 2, max: 2, description: "Persistent anxiety" },
+    { min: 3, max: 3, description: "Flashbacks" },
+    { min: 4, max: 4, description: "Insomnia" },
+    { min: 5, max: 5, description: "Trust issues" },
+    { min: 6, max: 6, description: "Self-doubt" }
+  ]
+};
+
+export const debilitatingInjuryPsychicTable: RandomTable = {
+  name: "Psychic Debilitating Injury",
+  description: "Severe psychic injuries that can hinder performance",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Panic attacks" },
+    { min: 2, max: 2, description: "Phobia" },
+    { min: 3, max: 3, description: "Emotional numbness" },
+    { min: 4, max: 4, description: "Depression" },
+    { min: 5, max: 5, description: "Dissociation" },
+    { min: 6, max: 6, description: "Identity Crisis" }
+  ]
+};
+
+export const lastingScarPsychicTable: RandomTable = {
+  name: "Psychic Lasting Scar",
+  description: "Severe and permanent psychic scars or disturbances",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Paranoia" },
+    { min: 2, max: 2, description: "Loss of confidence" },
+    { min: 3, max: 3, description: "Loss of empathy" },
+    { min: 4, max: 4, description: "Cynicism" },
+    { min: 5, max: 5, description: "Trust Issues" },
+    { min: 6, max: 6, description: "Amnesia" }
+  ]
+};
+
+export const strainElementalTable: RandomTable = {
+  name: "Elemental Strain",
+  description: "Minor elemental strains or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Singed hair" },
+    { min: 2, max: 2, description: "Bruised by force" },
+    { min: 3, max: 3, description: "Frostbitten fingers" },
+    { min: 4, max: 4, description: "Shocked by static" },
+    { min: 5, max: 5, description: "Eyes irritated by dust" },
+    { min: 6, max: 6, description: "Skin blistered by heat or acid" }
+  ]
+};
+
+export const lingeringTraumaElementalTable: RandomTable = {
+  name: "Elemental Lingering Trauma",
+  description: "Lingering elemental traumas or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Persistent coughing" },
+    { min: 2, max: 2, description: "Joints ache constantly" },
+    { min: 3, max: 3, description: "Numb extremities" },
+    { min: 4, max: 4, description: "Nerve damage causes twitching" },
+    { min: 5, max: 5, description: "Blurred vision" },
+    { min: 6, max: 6, description: "Nasty chemical burns" }
+  ]
+};
+
+export const debilitatingInjuryElementalTable: RandomTable = {
+  name: "Elemental Debilitating Injury",
+  description: "Severe elemental injuries that can hinder performance",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Lungs scarred by heat" },
+    { min: 2, max: 2, description: "Bones weakened/brittle" },
+    { min: 3, max: 3, description: "Circulation permanently impaired" },
+    { min: 4, max: 4, description: "Muscle control weakened" },
+    { min: 5, max: 5, description: "Light sensitivity" },
+    { min: 6, max: 6, description: "Thick scarred flesh" }
+  ]
+};
+
+export const lastingScarElementalTable: RandomTable = {
+  name: "Elemental Lasting Scar",
+  description: "Severe and permanent elemental scars or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Suffers chronic breathing issues" },
+    { min: 2, max: 2, description: "One limb permanently stiff or fragile" },
+    { min: 3, max: 3, description: "Prone to severe cold sensitivity" },
+    { min: 4, max: 4, description: "One hand partially paralyzed" },
+    { min: 5, max: 5, description: "Partial or full blindness in one eye" },
+    { min: 6, max: 6, description: "Flesh necrosis" }
+  ]
+};
+
+export const strainNecroticTable: RandomTable = {
+  name: "Necrotic Strain",
+  description: "Minor necrotic strains or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Skin turns pale" },
+    { min: 2, max: 2, description: "Sudden fatigue" },
+    { min: 3, max: 3, description: "Faint black veins" },
+    { min: 4, max: 4, description: "Teeth ache" },
+    { min: 5, max: 5, description: "Tingling in limbs" },
+    { min: 6, max: 6, description: "Echoes of whispers" }
+  ]
+};
+
+export const lingeringTraumaNecroticTable: RandomTable = {
+  name: "Necrotic Lingering Trauma",
+  description: "Lingering necrotic traumas or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Cold to the touch" },
+    { min: 2, max: 2, description: "Persistent muscle aches" },
+    { min: 3, max: 3, description: "Flesh is slow to mend" },
+    { min: 4, max: 4, description: "Brittle nails or hair" },
+    { min: 5, max: 5, description: "Vision flickers between life and death" },
+    { min: 6, max: 6, description: "Shadow clings unnaturally" }
+  ]
+};
+
+export const debilitatingInjuryNecroticTable: RandomTable = {
+  name: "Necrotic Debilitating Injury",
+  description: "Severe necrotic injuries that can hinder performance",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Circulation weakens" },
+    { min: 2, max: 2, description: "Chronic weakness" },
+    { min: 3, max: 3, description: "Permanent nerve damage" },
+    { min: 4, max: 4, description: "Weakened immune system" },
+    { min: 5, max: 5, description: "Partial organ failure" },
+    { min: 6, max: 6, description: "Soul partially consumed" }
+  ]
+};
+
+export const lastingScarNecroticTable: RandomTable = {
+  name: "Necrotic Lasting Scar",
+  description: "Severe and permanent necrotic scars or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Necrotized limb" },
+    { min: 2, max: 2, description: "Slowed Recovery" },
+    { min: 3, max: 3, description: "Dead Flesh" },
+    { min: 4, max: 4, description: "Prone to frequent illness and infections" },
+    { min: 5, max: 5, description: "Missing or rotting extremities" },
+    { min: 6, max: 6, description: "Presence unnerves the living" }
+  ]
+};
+
+export const strainRadiantTable: RandomTable = {
+  name: "Radiant Strain",
+  description: "Minor radiant strains or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Eyes strained" },
+    { min: 2, max: 2, description: "Skin feels raw" },
+    { min: 3, max: 3, description: "Numb limbs" },
+    { min: 4, max: 4, description: "Burning sensation" },
+    { min: 5, max: 5, description: "Ringing in ears" },
+    { min: 6, max: 6, description: "Heart races unnaturally" }
+  ]
+};
+
+export const lingeringTraumaRadiantTable: RandomTable = {
+  name: "Radiant Lingering Trauma",
+  description: "Lingering radiant traumas or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Light sensitivity" },
+    { min: 2, max: 2, description: "Skin permanently tender" },
+    { min: 3, max: 3, description: "Glowing veins that fade slowly" },
+    { min: 4, max: 4, description: "Phantom pain in injured areas" },
+    { min: 5, max: 5, description: "Echoes of divine voices" },
+    { min: 6, max: 6, description: "Feels detached from the mortal world" }
+  ]
+};
+
+export const debilitatingInjuryRadiantTable: RandomTable = {
+  name: "Radiant Debilitating Injury",
+  description: "Severe radiant injuries that can hinder performance",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Partial blindness" },
+    { min: 2, max: 2, description: "Flesh burns too easily" },
+    { min: 3, max: 3, description: "Nerve over-sensitivity" },
+    { min: 4, max: 4, description: "Flesh weakens, bruises easily" },
+    { min: 5, max: 5, description: "Frequent migraines" },
+    { min: 6, max: 6, description: "Touch disrupts magic around them" }
+  ]
+};
+
+export const lastingScarRadiantTable: RandomTable = {
+  name: "Radiant Lasting Scar",
+  description: "Severe and permanent radiant scars or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Blinded" },
+    { min: 2, max: 2, description: "Sunlight vulnerability" },
+    { min: 3, max: 3, description: "Uncontrolled muscle spasms in bright light" },
+    { min: 4, max: 4, description: "Continually glowing scars" },
+    { min: 5, max: 5, description: "Tinnitus" },
+    { min: 6, max: 6, description: "Healing magic resistance" }
+  ]
+};
+
+export const strainShadowTable: RandomTable = {
+  name: "Shadow Strain",
+  description: "Minor shadow strains or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Cold shivers" },
+    { min: 2, max: 2, description: "Dizziness" },
+    { min: 3, max: 3, description: "Overwhelmed by dread" },
+    { min: 4, max: 4, description: "Mind feels clouded" },
+    { min: 5, max: 5, description: "Eyes are bloodshot" },
+    { min: 6, max: 6, description: "Vision blackens" }
+  ]
+};
+
+export const lingeringTraumaShadowTable: RandomTable = {
+  name: "Shadow Lingering Trauma",
+  description: "Lingering shadow traumas or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Persistent whispering voices" },
+    { min: 2, max: 2, description: "Intense feeling of isolation" },
+    { min: 3, max: 3, description: "Heart beats erratically" },
+    { min: 4, max: 4, description: "Fear of light or brightness" },
+    { min: 5, max: 5, description: "Disturbing feeling of being followed" },
+    { min: 6, max: 6, description: "Constant sense of being watched" }
+  ]
+};
+
+export const debilitatingInjuryShadowTable: RandomTable = {
+  name: "Shadow Debilitating Injury",
+  description: "Severe shadow injuries that can hinder performance",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Loss of warmth or sensation" },
+    { min: 2, max: 2, description: "Vision distorted by shadows" },
+    { min: 3, max: 3, description: "Breathing becomes shallow" },
+    { min: 4, max: 4, description: "Loss of time perception" },
+    { min: 5, max: 5, description: "Limbs lose coordination" },
+    { min: 6, max: 6, description: "Reduced physical strength" }
+  ]
+};
+
+export const lastingScarShadowTable: RandomTable = {
+  name: "Shadow Lasting Scar",
+  description: "Severe and permanent shadow scars or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Unidentifiable Pain" },
+    { min: 2, max: 2, description: "Permanent shadow around the body, causing constant unease and discomfort" },
+    { min: 3, max: 3, description: "Humming darkness, disturbing other living beings nearby" },
+    { min: 4, max: 4, description: "Short Term Memory Loss" },
+    { min: 5, max: 5, description: "Vision Problems" },
+    { min: 6, max: 6, description: "Unnerving Presence" }
+  ]
+};
+
+export const strainChaosTable: RandomTable = {
+  name: "Chaos Strain",
+  description: "Minor chaos strains or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Uncontrollable laughter" },
+    { min: 2, max: 2, description: "Mind races" },
+    { min: 3, max: 3, description: "Hallucinations" },
+    { min: 4, max: 4, description: "Sudden bursts of energy" },
+    { min: 5, max: 5, description: "Eyes constantly shifting in color" },
+    { min: 6, max: 6, description: "Distorted body sensations" }
+  ]
+};
+
+export const lingeringTraumaChaosTable: RandomTable = {
+  name: "Chaos Lingering Trauma",
+  description: "Lingering chaos traumas or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Perception of reality flickers" },
+    { min: 2, max: 2, description: "Thoughts jumbled and random" },
+    { min: 3, max: 3, description: "Speech patterns become erratic" },
+    { min: 4, max: 4, description: "Reality bends around them" },
+    { min: 5, max: 5, description: "Experience intense déjà vu" },
+    { min: 6, max: 6, description: "Touch feels wrong or misplaced" }
+  ]
+};
+
+export const debilitatingInjuryChaosTable: RandomTable = {
+  name: "Chaos Debilitating Injury",
+  description: "Severe chaos injuries that can hinder performance",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Body flickers or phases" },
+    { min: 2, max: 2, description: "Sudden body alterations" },
+    { min: 3, max: 3, description: "Unstable magic surges" },
+    { min: 4, max: 4, description: "Erratic emotional outbursts" },
+    { min: 5, max: 5, description: "Sudden involuntary transformations" },
+    { min: 6, max: 6, description: "Spontaneous teleports" }
+  ]
+};
+
+export const lastingScarChaosTable: RandomTable = {
+  name: "Chaos Lasting Scar",
+  description: "Severe and permanent chaos scars or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Body randomly shifts in shape, causing pain and confusion" },
+    { min: 2, max: 2, description: "Arms or legs occasionally become unnaturally elongated or shortened" },
+    { min: 3, max: 3, description: "One hand or foot glows faintly and uncontrollably" },
+    { min: 4, max: 4, description: "Mood Swings" },
+    { min: 5, max: 5, description: "Occasionally bursts into a creature form for short periods, losing control" },
+    { min: 6, max: 6, description: "Body becomes intangible or transparent at random" }
+  ]
+};
+
+export const strainToxicTable: RandomTable = {
+  name: "Toxic Strain",
+  description: "Minor toxic strains or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Nausea" },
+    { min: 2, max: 2, description: "Cold sweats" },
+    { min: 3, max: 3, description: "Shivering" },
+    { min: 4, max: 4, description: "Muscle cramps" },
+    { min: 5, max: 5, description: "Faint dizziness" },
+    { min: 6, max: 6, description: "Sudden weakness" }
+  ]
+};
+
+export const lingeringTraumaToxicTable: RandomTable = {
+  name: "Toxic Lingering Trauma",
+  description: "Lingering toxic traumas or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Persistent stomach cramps" },
+    { min: 2, max: 2, description: "Faint taste of bitterness" },
+    { min: 3, max: 3, description: "Skin becomes itchy and flushed" },
+    { min: 4, max: 4, description: "Skin turns sickly yellow" },
+    { min: 5, max: 5, description: "Vivid hallucinations" },
+    { min: 6, max: 6, description: "Body feels distant or detached" }
+  ]
+};
+
+export const debilitatingInjuryToxicTable: RandomTable = {
+  name: "Toxic Debilitating Injury",
+  description: "Severe toxic injuries that can hinder performance",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Poison interrupts metabolism" },
+    { min: 2, max: 2, description: "Blood toxicity" },
+    { min: 3, max: 3, description: "Severe internal damage" },
+    { min: 4, max: 4, description: "Nervous system failure" },
+    { min: 5, max: 5, description: "Mental disorientation" },
+    { min: 6, max: 6, description: "Sepsis or blood poisoning" }
+  ]
+};
+
+export const lastingScarToxicTable: RandomTable = {
+  name: "Toxic Lasting Scar",
+  description: "Severe and permanent toxic scars or injuries",
+  diceFormula: "1d6",
+  table: [
+    { min: 1, max: 1, description: "Constantly weak" },
+    { min: 2, max: 2, description: "Internal organ damage" },
+    { min: 3, max: 3, description: "Heart or lungs permanently weakened" },
+    { min: 4, max: 4, description: "Weakened limb" },
+    { min: 5, max: 5, description: "Memory loss or confusion" },
+    { min: 6, max: 6, description: "Constant fever or chills" }
+  ]
+};

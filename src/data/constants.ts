@@ -1,6 +1,6 @@
 import type { RandomTable } from './types';
 import { daysWeek, moonPhases, season, timeDay, weather } from './tables';
-import { clueTable } from './everlight';
+import { actionTable, clueTable, creatureDescriptorTable, creatureDispositionTable, creatureMotivationTable, huntersFocusTable, professionTable, realmTable, speciesTable, thematicTable } from './everlight';
 
 /* Table Options */
 
@@ -11,6 +11,15 @@ export const moreTables: {[key: string]: RandomTable} = {
   [moonPhases.name]: moonPhases,
   [daysWeek.name]: daysWeek,
   [clueTable.name]: clueTable,
+  [huntersFocusTable.name]: huntersFocusTable,
+  [realmTable.name]: realmTable,
+  [speciesTable.name]: speciesTable,
+  [creatureDescriptorTable.name]: creatureDescriptorTable,
+  [creatureDispositionTable.name]: creatureDispositionTable,
+  [creatureMotivationTable.name]: creatureMotivationTable,
+  [professionTable.name]: professionTable,
+  [actionTable.name]: actionTable,
+  [thematicTable.name]: thematicTable,
 };
 
 

@@ -3,6 +3,7 @@
   import Page from '../ui/Page.svelte';
   import RandomTables from '../more-options/RandomTables.svelte';
   import RandomCreature from '../more-options/RandomCreature.svelte';
+  import RandomDamage from '../more-options/RandomDamage.svelte';
 
 </script>
 
@@ -12,6 +13,7 @@
   <div class="flex flex-col gap-2">
     <RandomNPC />
     <RandomCreature />
+    <RandomDamage />
     <RandomTables />
   </div>
 
