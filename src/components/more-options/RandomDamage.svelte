@@ -83,7 +83,7 @@ function output(camelCase: string) {
 </script>
 
 <div>
-  <h4 class="text-2xl font-bold mb-3">Random Creature</h4>
+  <h4 class="text-2xl font-bold mb-3">Random Damage Wound</h4>
 
   <div class="flex">
     <div>
