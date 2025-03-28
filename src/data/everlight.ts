@@ -1243,3 +1243,22 @@ export const lastingScarToxicTable: RandomTable = {
     { min: 6, max: 6, description: "Constant fever or chills" }
   ]
 };
+
+export const mishapTable: RandomTable = {
+  name: "Mishap",
+  description: "A table of magical mishaps",
+  diceFormula: "1d10",
+  table: [
+    { min: 1, max: 1, description: "The spell effect is applied to you" },
+    { min: 2, max: 2, description: "The spell fizzles but all your rolls are hindered until the end of your next turn" },
+    { min: 3, max: 3, description: "The spell goes wild affecting some random creature or object in visual range" },
+    { min: 4, max: 4, description: "There is a backlash that stuns you, you can make no action or move on your next turn" },
+    { min: 5, max: 5, description: "The magic lingers and the spell goes off next round" },
+    { min: 6, max: 6, description: "Roll twice on the table and they both happen" },
+    { min: 7, max: 7, description: "Chaotic magic erupts in its place causing minor disturbances but nothing damaging or harmful, only annoying" },
+    { min: 8, max: 8, description: "You take a lingering trauma as the spell drains some of your energy" },
+    { min: 9, max: 9, description: "You are unable to cast spells for the next 3 rounds because your magical connection has been disrupted" },
+    { min: 10, max: 10, description: "The spell backfires and instead summons a hostile creature from nearby of equal level to the spell cast" }
+  ]
+};
+
