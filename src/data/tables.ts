@@ -35,6 +35,22 @@ table: [
 ],
 }
 
+export const inspirationCategories: RandomTable = {
+  name: 'Inspiration Categories',
+  description: 'Random inspiration categories',
+  diceFormula: '1d8',
+  table: [
+    { min: 1, max: 1, description: 'Verbs' },
+    { min: 2, max: 2, description: 'Nouns' },
+    { min: 3, max: 3, description: 'Adjectives' },
+    { min: 4, max: 4, description: 'Emotions' },
+    { min: 5, max: 5, description: 'Motivations' },
+    { min: 6, max: 6, description: 'Benefits' },
+    { min: 7, max: 7, description: 'Environments' },
+    { min: 8, max: 8, description: 'Complications' },
+  ],
+};
+
 export const weather: RandomTable = {
 name: 'Weather',
 description: 'Random weather',

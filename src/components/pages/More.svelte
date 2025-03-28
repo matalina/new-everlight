@@ -4,6 +4,7 @@
   import RandomTables from '../more-options/RandomTables.svelte';
   import RandomCreature from '../more-options/RandomCreature.svelte';
   import RandomDamage from '../more-options/RandomDamage.svelte';
+  import Inspiration from '../more-options/Inspiration.svelte';
 
 </script>
 
@@ -11,6 +12,7 @@
   <h3 class="text-3xl font-bold mb-3">More Options</h3>
 
   <div class="flex flex-col gap-2">
+    <Inspiration />
     <RandomNPC />
     <RandomCreature />
     <RandomDamage />
