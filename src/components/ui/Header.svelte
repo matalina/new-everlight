@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Link } from "svelte-routing";
-  import Logo from "../../assets/logo.svg";
+  import Logo from "../../assets/logo.png";
   import ClearButton from "../story-mode/ClearButton.svelte";
   import CopyButton from "../story-mode/CopyButton.svelte";
   import NewSceneButton from "../story-mode/NewSceneButton.svelte";
