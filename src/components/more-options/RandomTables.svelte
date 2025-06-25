@@ -1,38 +1,38 @@
 <script lang="ts">
-  import { navigate } from 'svelte-routing';
-  import { content } from '../../App.svelte';
-  import RollIcon from '../../assets/d20.svg';
-  import PlusIcon from '../../assets/plus.svg';
-  import { rollOnTable } from '../../lib/tables';
-  import { moreTables } from '../../data/constants';
+  import { navigate } from "svelte-routing";
+  import { content } from "../../App.svelte";
+  import RollIcon from "../../assets/d20.svg";
+  import PlusIcon from "../../assets/plus.svg";
+  import { rollOnTable } from "../../lib/tables";
+  import { moreTables } from "../../data/constants";
 
-  const tables = $derived(Object.keys({...moreTables}));
+  const tables = $derived(Object.keys({ ...moreTables }));
 
-  let result: string = $state('');
+  let result: string = $state("");
   // svelte-ignore state_referenced_locally
-    let value: string = $state(moreTables[tables[0]].name);
+  let value: string = $state(moreTables[tables[0]].name);
 
   function getResult() {
-    const answer = rollOnTable(moreTables[value])
+    const answer = rollOnTable(moreTables[value]);
     result = `<strong>${value}</strong>: ${answer.description}<br/><small>(${answer.roll.output})</small>`;
   }
 
   function saveToStory() {
     content.add({
-      type: 'table',
+      type: "table",
       output: result,
     });
-    navigate('/');
+    navigate("/");
   }
 </script>
 
 <div>
   <h4 class="text-2xl font-bold mb-3">Random Tables</h4>
 
-  <div class="flex">
+  <div class="flex flex-col gap-3">
     <div>
       <div class="flex pr-3">
-        <select class="border" bind:value={value}>
+        <select class="border" bind:value>
           {#each tables as table}
             <option value={table}>{table}</option>
           {/each}
@@ -41,7 +41,7 @@
           class="w-[48px] flex items-center justify-center"
           onclick={getResult}
         >
-          <img src={RollIcon} alt="Roll" class="h-[24px]"/>
+          <img src={RollIcon} alt="Roll" class="h-[24px]" />
         </button>
       </div>
     </div>
@@ -49,13 +49,10 @@
       {#if result}
         <div class="">{@html result}</div>
         <div>
-          <button
-            class="w-[48px]"
-            onclick={saveToStory}
-          >
-            <img src={PlusIcon} alt="Roll" class="h-[24px]"/>
+          <button class="w-[48px]" onclick={saveToStory}>
+            <img src={PlusIcon} alt="Roll" class="h-[24px]" />
           </button>
-      </div>
+        </div>
       {/if}
     </div>
   </div>

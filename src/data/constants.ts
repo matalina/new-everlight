@@ -28,12 +28,12 @@ export const moreTables: {[key: string]: RandomTable} = {
 
 export const statuses = [
   {
-    status: 'Solid',
+    status: 'Simple',
     target: 3,
     guidance: 'Scene situation is dull, nothing interesting is happening',
   },
   {
-    status: 'Stable',
+    status: 'Standard',
     target: 6,
     guidance: 'Events are underway and are proceeding as expected',
   },
@@ -43,17 +43,17 @@ export const statuses = [
     guidance: 'Situation has the potential for the unexpected',
   },
   {
-    status: 'Unstable',
+    status: 'Difficult',
     target: 12,
     guidance: 'Events require players to be on high alert',
   },
   {
-    status: 'Insane',
+    status: 'Challenging',
     target: 15,
     guidance: 'Players in constant danger, anything could happen',
   },
   {
-    status: 'Chaos',
+    status: 'Intimidating',
     target: 18,
     guidance: 'Situation is beyond all control',
   },
