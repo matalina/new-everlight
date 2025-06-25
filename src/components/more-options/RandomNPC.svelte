@@ -35,11 +35,10 @@
     const verb = rollOnTable(actionTable);
     const something = rollOnTable(thematicTable);
 
-    sentence = `${name} is a ${descriptor.description} ${species.description} ${type.description} who ${verb.description} ${something.description} that does ${damage.description} damage.`;
+    sentence = `${name} is a ${descriptor.description} ${species.description} ${type.description} who ${verb.description} ${something.description} and does ${damage.description} damage.`;
   }
 
   function saveToStory() {
-    console.log(sentence);
     content.add({
       type: "table",
       output: sentence,
